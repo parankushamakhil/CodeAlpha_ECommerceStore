@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">E-Store</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#products">Products</a></li>
+                <li><a href="/cart" id="cart-link">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="/login" id="login-link">Login</a></li>
+                <li><a href="#" id="logout-link" style="display: none;">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-details" class="container">
+            <div class="product-detail-card">
+                <div class="product-detail-image">
+                    <img src="" alt="Product Image" id="product-image">
+                </div>
+                <div class="product-detail-info">
+                    <h2 id="product-name"></h2>
+                    <p class="product-price" id="product-price"></p>
+                    <p class="product-description" id="product-description"></p>
+                    <button id="add-to-cart-btn" class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Commerce Store</p>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>

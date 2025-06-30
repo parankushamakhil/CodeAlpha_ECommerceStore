@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="/">E-Store</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#products">Products</a></li>
+        <li><a href="/cart" id="cart-link">Cart <span id="cart-count">0</span></a></li>
+        <li><a href="/login" id="login-link">Login</a></li>
+        <li><a href="#" id="logout-link" style="display: none;">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cart" class="cart-container">
+      <h1>Shopping Cart</h1>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <h2>Total: $<span id="cart-total">0.00</span></h2>
+        <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html> 
